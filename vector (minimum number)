@@ -1,0 +1,25 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+
+int main() {
+    vector<int>numbers;
+
+    numbers.push_back(24);
+    numbers.push_back(55);
+    numbers.push_back(98);
+    numbers.push_back(40);
+    numbers.push_back(67);
+
+    int minimum=numbers[0];
+
+    for (int i=0; i<numbers.size(); i++){
+        if (numbers[i]<minimum){
+            minimum=numbers[i];
+        }
+    }
+    cout<<"Minimum Element is: "<<minimum<<endl;
+
+    return 0;
+    
+}
