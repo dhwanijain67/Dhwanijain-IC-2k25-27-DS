@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+#define MAX 5
+
+int main() {
+    int front = 0, rear = 4;
+
+    if (rear == MAX - 1)
+        printf("Queue is full");
+    else
+        printf("Queue is not full");
+
+    return 0;
+}
