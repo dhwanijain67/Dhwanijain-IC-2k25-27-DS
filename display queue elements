@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#define MAX 100
+
+int main() {
+    int queue[MAX] = {10, 20, 30, 40};
+    int front = 0, rear = 3;
+    int i;
+
+    if (front == -1) {
+        printf("Queue is empty");
+    } else {
+        printf("Queue elements: ");
+
+        for (i = front; i <= rear; i++) {
+            printf("%d ", queue[i]);
+        }
+    }
+
+    return 0;
+}
