@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int q[5]={10,20,30,40,50};
+    int f=0, r=4, count=0, i;
+
+    for(i=f; i<=r; i++)
+        count++;
+
+    printf("Total elements = %d", count);
+
+    return 0;
+}
