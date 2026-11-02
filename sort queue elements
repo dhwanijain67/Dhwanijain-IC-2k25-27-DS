@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int q[5]={40,10,50,20,30};
+    int i, j, temp;
+
+    for(i=0; i<5; i++)
+    {
+        for(j=i+1; j<5; j++)
+        {
+            if(q[i]>q[j])
+            {
+                temp=q[i];
+                q[i]=q[j];
+                q[j]=temp;
+            }
+        }
+    }
+
+    printf("Sorted Queue:\n");
+    for(i=0; i<5; i++)
+        printf("%d ", q[i]);
+
+    return 0;
+}
